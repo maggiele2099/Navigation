@@ -13,6 +13,21 @@ struct ContentView: View {
             VStack {
                 Text("This is the root view 🌳")
                 NavigationLink(destination: SecondView()) {Text("Click Me!")
+                }
+                    NavigationLink(destination: HomeView()) {
+                    Text("Home")
+                    }
+                NavigationLink(destination: AboutView()) {
+                    Text("About")
+                }
+                NavigationLink(destination: Contact()) {
+                    Text("Contact")
+                }
+                NavigationLink(destination: HelpView()) {
+                    Text("Help")
+                }
+                
+
                     
                         .navigationTitle("Home")
                         .navigationBarTitleDisplayMode(.inline)
@@ -21,7 +36,6 @@ struct ContentView: View {
         }
         
     }
-}
 
 #Preview {
     ContentView()
